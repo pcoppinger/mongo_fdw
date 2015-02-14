@@ -739,15 +739,7 @@ MongoGetOptions(Oid foreignTableId)
 	}
 
 	username = MongoGetOptionValue(foreignTableId, OPTION_NAME_USERNAME);
-	if (username == NULL)
-	{
-		username = pstrdup("");
-	}
 	password = MongoGetOptionValue(foreignTableId, OPTION_NAME_PASSWORD);
-	if (password == NULL)
-	{
-		password = pstrdup("");
-	}
 
 	mongoFdwOptions = (MongoFdwOptions *) palloc0(sizeof(MongoFdwOptions));
 	mongoFdwOptions->addressName = addressName;
