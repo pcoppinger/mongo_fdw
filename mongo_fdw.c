@@ -1227,7 +1227,7 @@ MongoFreeScanState(MongoFdwExecState *executionState)
 		return;
 	}
 
-	bson_destroy(executionState->queryDocument);
+//	bson_destroy(executionState->queryDocument);	// This blows up when commit happens before MongoEndForeignScan
 	bson_dispose(executionState->queryDocument);
 
 	mongo_cursor_destroy(executionState->mongoCursor);
