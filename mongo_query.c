@@ -6,7 +6,9 @@
  * that queries are sent through the official MongoDB C driver, and apply query
  * optimizations to reduce the amount of data fetched from the driver.
  *
- * Copyright (c) 2012-2014 Citus Data, Inc.
+ * Copyright (c) 2012, Citus Data, Inc.
+ *
+ * $Id$
  *
  *-------------------------------------------------------------------------
  */
